@@ -1,10 +1,10 @@
 sed -i 's/deb.debian.org/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 
-apt-get -y update
-apt-get -y upgrade
+apt -yqq update
+apt -yqq upgrade
 
-apt install -y fish
+apt install -yqq fish
 
 chsh -s /usr/bin/fish fundon
 
-apt install -y git neovim llvm build-essential pkg-config libssl-dev
+apt install -yqq git neovim llvm build-essential pkg-config libssl-dev
